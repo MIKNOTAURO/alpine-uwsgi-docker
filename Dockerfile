@@ -8,7 +8,6 @@ RUN apk add --update \
 
 ENV APP_DIR /app
 
-# app dir
 RUN mkdir ${APP_DIR} \
 	&& chown -R nginx:nginx ${APP_DIR} \
 	&& chmod 777 /run/ -R \
