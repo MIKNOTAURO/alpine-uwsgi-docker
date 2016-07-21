@@ -16,6 +16,7 @@ VOLUME [${APP_DIR}]
 WORKDIR ${APP_DIR}
 
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx_site.conf /etc/nginx/conf.d/nginx_site.conf
 COPY supervisord.conf /etc/supervisord.conf
 
 COPY ./app /app
